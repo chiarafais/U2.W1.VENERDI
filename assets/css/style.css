@@ -3,6 +3,7 @@
 /* font-family: "Roboto", sans-serif; */
 /* font-family: "Spectral", serif; */
 .max {
+  /* VERSIONE DESKTOP FUNZIONANTE FINO A 1150PX, A DIMENSINI INFERIORI NON E' RESPONSIVE*/
   max-width: 1192px;
   margin-inline: auto;
 }
@@ -113,6 +114,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            width: 100%;
 
             .cardTop {
               display: flex;
@@ -169,6 +171,7 @@ main {
         display: flex;
         justify-content: space-between;
         .cardMain {
+          width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
@@ -210,7 +213,14 @@ main {
           }
           .cardDate {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+            div {
+              display: flex;
+              align-items: center;
+            }
+            img {
+              margin-right: 10px;
+            }
           }
         }
 
@@ -264,5 +274,79 @@ main {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* tentativo di versione tablet */
+  .max {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  header {
+    .navBar {
+      position: unset;
+    }
+  }
+  main {
+    .articles {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      .rightDiv {
+        width: 100%;
+        position: unset;
+        height: 100%;
+        margin-bottom: 30px;
+      }
+      .leftDiv {
+        width: 100%;
+        .articleCard {
+          .cardMain {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .max {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  header {
+    .navBar {
+      position: unset;
+    }
+  }
+  main {
+    .articles {
+      .rightDiv {
+        width: 100%;
+        position: unset;
+        height: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  /* tentativo di versione mobile */
+  .max {
+    max-width: 300px;
+    margin-inline: auto;
+  }
+
+  main {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .trending .trendContainer .cardLine {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-direction: column;
   }
 }
