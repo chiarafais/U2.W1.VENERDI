@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Spectral", serif; */
+.max {
+  max-width: 1192px;
+  margin-inline: auto;
+}
+.headerColor {
+  background-color: white;
+}
+
+header {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #171717;
+      margin-right: 15px;
+      font-weight: 400;
+    }
+    button {
+      border: none;
+      color: white;
+      background-color: #010101;
+      border-radius: 25px;
+      padding: 12px 15px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+    }
+    .buttonColor {
+      background: rgb(26, 137, 23);
+    }
+  }
+}
+
+main {
+  .stayCurios {
+    background-color: #ffc017;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    .contenitoreM {
+      display: flex;
+      justify-content: space-between;
+      height: 385px;
+      h1 {
+        font-family: "Spectral", serif;
+        font-size: 7em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        letter-spacing: -5px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 45px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+      }
+      button {
+        border: none;
+        color: white;
+        background-color: #010101;
+        border-radius: 25px;
+        padding: 12px 45px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+      }
+      .svgM {
+        position: absolute;
+        right: 0;
+      }
+    }
+    svg {
+      max-width: 500px;
+    }
+  }
+  .trending {
+    border-bottom: 1px solid #8080801f;
+    margin-bottom: 80px;
+    h3 {
+      display: flex;
+      align-items: center;
+      font-family: "Roboto", sans-serif;
+      margin-top: 30px;
+      span {
+        margin-right: 10px;
+      }
+    }
+    .trendContainer {
+      display: flex;
+      flex-direction: column;
+      .cardLine {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        .trendingCard {
+          display: flex;
+          width: 375px;
+          height: 100px;
+          .cardMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .cardTop {
+              display: flex;
+              align-items: center;
+              h4 {
+                font-family: "Roboto", sans-serif;
+              }
+              img {
+                height: 20px;
+                border-radius: 4px;
+                margin-right: 5px;
+              }
+            }
+            p {
+              font-size: 16px;
+              font-weight: 700;
+              font-family: "Roboto", sans-serif;
+              color: #242424;
+            }
+            div {
+              display: flex;
+              align-items: center;
+              span {
+                color: #6b6b6b;
+                font-size: 13px;
+                font-weight: 400;
+                font-family: "Roboto", sans-serif;
+                margin-right: 5px;
+              }
+            }
+          }
+
+          .number {
+            color: #e5e4e4;
+            letter-spacing: -0.014em;
+            line-height: 38px;
+            font-size: 32px;
+            font-weight: 500;
+            font-family: "Roboto", sans-serif;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  .articles {
+    display: flex;
+    justify-content: space-between;
+    .leftDiv {
+      width: 650px;
+      .articleCard {
+        height: 155px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        .cardMain {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .cardTop {
+            display: flex;
+            align-items: center;
+            font-family: "Roboto", sans-serif;
+            img {
+              height: 20px;
+              border-radius: 4px;
+              margin-right: 5px;
+            }
+            h5 {
+              font-size: 13px;
+              font-weight: 500;
+            }
+          }
+          h4 {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "Roboto", sans-serif;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(107, 107, 107);
+          }
+          span {
+            color: #6b6b6b;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            margin-right: 5px;
+          }
+          .cardTag {
+            padding: 2px 8px;
+            background-color: #f2f2f2;
+            border-radius: 100px;
+          }
+          .cardDate {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .articleImg {
+          display: flex;
+          align-items: center;
+          img {
+            width: 200px;
+            height: 134px;
+          }
+        }
+      }
+    }
+    .rightDiv {
+      width: 400px;
+      z-index: 200;
+      background-color: white;
+      position: sticky;
+      top: 100px;
+      height: 400px;
+      h3 {
+        padding-bottom: 16px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+      }
+      .tags {
+        margin-bottom: 20px;
+        span {
+          background-color: #f2f2f2;
+          border-radius: 100px;
+          padding: 8px 16px;
+          color: #242424;
+          line-height: 20px;
+          display: inline-block;
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      .links {
+        border-top: 1px solid #8080801f;
+        a {
+          color: #6b6b6b;
+          text-decoration: none;
+          margin-bottom: 20px;
+          display: inline-block;
+          margin: 13px 8px 0 0;
+          font-family: "Roboto", sans-serif;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
